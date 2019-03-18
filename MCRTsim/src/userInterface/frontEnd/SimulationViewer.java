@@ -502,12 +502,12 @@ public class SimulationViewer extends JPanel
         this.scriptSetterBtn = new JButton("Script");
         scheduleToolBar.add(this.scriptSetterBtn);
         
-        popupWin = new JFrame("排程中...");
+        popupWin = new JFrame("Calculating...");
         popupWin.setBounds(parent.getFrame().getX()+parent.getFrame().getWidth()/2 -100,
                             parent.getFrame().getY()+parent.getFrame().getHeight()/2 -100, 100, 100);
         popupWin.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         popupWin.setLayout(new BorderLayout());
-        popupWin.add(new JLabel("排程中..."),BorderLayout.CENTER);
+        popupWin.add(new JLabel("Calculating..."),BorderLayout.CENTER);
         //popupWin.setVisible(true);
     }
     

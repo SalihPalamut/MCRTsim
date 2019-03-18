@@ -6,8 +6,6 @@
 package mcrtsim;
 
 import java.math.BigDecimal;
-import java.text.DecimalFormat;
-import static mcrtsim.Definition.magnificationFormat;
 
 /**
  *
@@ -35,14 +33,12 @@ public class MCRTsimMath
     
     public double changeDecimalFormat(double d)
     {
-        DecimalFormat df = new DecimalFormat(magnificationFormat);
-        return Double.parseDouble(df.format(d));
+        return d;
     }
     
     public double changeDecimalFormatFor5(double d)
     {
-        DecimalFormat df = new DecimalFormat("##.00000");
-        return Double.parseDouble(df.format(d));
+       return d;
     }
     
     public static double add(double value1,double value2)

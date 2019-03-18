@@ -285,16 +285,15 @@ public class CoreTimeLine
                     g.setColor(Color.black);
                 }
                 
-                DecimalFormat df = new DecimalFormat("##.00");
-                double time = Double.parseDouble(df.format(te.getStartTime()));
-                
+               
+                double time = te.getStartTime();
                 if(((int)(time*10)%10)!=0)
                 {
                     g.drawString(""+ time, (int)(o.x - 4 + te.getStartTime() * baseunit), o.y + 40);
                     g.drawLine((int)(o.x + te.getStartTime() * baseunit), o.y, (int)(o.x + te.getStartTime() * baseunit), o.y + 25);
                 }
 
-                time = Double.parseDouble(df.format(te.getEndTime()));
+                time = te.getEndTime();
 
                 if(( (int)(time * 10) % 10) != 0)
                 {
