@@ -1,1 +1,0 @@
-start /MIN  java -jar MCRTsim2.8.jar
